@@ -1,0 +1,232 @@
+body {
+    width: 100vw;
+    height: auto;
+    font-family: Arial, sans-serif;
+    background-image: url('https://cdn.pixabay.com/photo/2017/02/01/14/32/seamless-2030343_1280.jpg');
+    background-size: 800px 800px;
+    background-blend-mode: lighten;
+    background-color: rgba(255,255,255,0.8);
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.centered {
+    text-align: center;
+}
+
+#header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #eacbd6;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.2);
+}
+
+#header > .header-left > h1 {
+    font-family: 'Neonderthaw', cursive;
+    font-weight: 400;
+    text-shadow: 0px 0px 6px rgba(30, 0, 101, 0.6);
+    margin: 0px;
+    transition: 0.3s ease;
+}
+
+#header > .header-left > h1:hover {
+    text-shadow: 0px 0px 10px rgba(30, 0, 101, 1);
+}
+
+#section-links {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#section-links > .section-link {
+    width: 165px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0px 20px;
+}
+
+#section-links > .section-link > a {
+    color: rgb(104, 93, 131);
+    font-size: 18px;
+    transition: 0.3s ease;
+    letter-spacing: 1px;
+}
+
+#section-links > .section-link > a:hover {
+    color: rgb(30, 0, 101);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+img#selfie {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    object-position: 50% 20%;
+    transition: 0.3s ease;
+    transform: scale(1);
+}
+
+img#selfie:hover {
+    width: 170px;
+    height: 170px;
+    margin: -10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+img#selfie:active {
+    transition: 0s;
+    transform: scale(10);
+}
+
+.row-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info-card {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.info-card:hover {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+    transform: scale(1.03);
+}
+
+.info-card > h2 {
+    transition: 0.3s ease;
+}
+
+.info-card:hover > h2 {
+    letter-spacing: 0.5px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(53, 53, 156);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.poem {
+    font-style: italic;
+}
+
+#interests-container {
+    padding: 20px 40px;
+    margin: 20px 100px;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+#interests-container:hover {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+    transform: scale(1.03);
+}
+
+#class-schedule-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 5px 0px;
+    margin-top: 60px;
+    box-shadow: 0px -12px 12px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    font-size: 15px;
+    background-color: white;
+}
+
+td {
+    text-align: center;
+    width: 200px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+tr:nth-child(even) > td {
+    background-color: #e3e5eb;
+}
+
+tr > td:first-child {
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+tr.heading > td {
+    height: 40px;
+    font-size: large;
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+tr.heading > td:first-child {
+    background-color: gray;
+    border-radius: 20px 5px 5px 5px;
+}
+
+td.wd1 {
+    background-color: lightblue !important;
+}
+
+td.sd1 {
+    background-color: lightcoral !important;
+}
+
+td.ioa {
+    background-color: slateblue !important;
+}
+
+td.cn {
+    background-color: lightgoldenrodyellow !important;
+}
+
+td.dr {
+    background-color: lightgreen !important;
+}
