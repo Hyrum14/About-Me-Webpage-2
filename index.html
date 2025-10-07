@@ -1,0 +1,148 @@
+<!--
+
+https://68bbaf5469ea5f1f1b277aa5--remarkable-tiramisu-fdf4aa.netlify.app/
+
+--SELF GRADE--
+BODY        A
+NAME        A
+PORTRAIT    A
+HEADINGS    A
+SCHEDULE    A
+
+--EXTRA CREDIT COMPLETED--
+FLOATING DIV (5pts)       NO
+STRIPED TABLE (5pts)      YES
+CSS3 WEB FONTS (5pts)     YES
+MODAL PORTRAIT (10pts)    NO
+
+OTHERS (5pts/each):
+
+FLOATING DIVS (5pts)      YES (I think, each info card is in its own centered div)
+REARRANGE (5pts)          YES (I put the selfie into the header and the first three info cards in a row)
+INTERACTIVE DESIGN (5pts) YES (Many elements have hover effects and there are section links at the top)
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>About Hyrum Reynolds</title>
+</head>
+<body>
+    
+    <div id="header">
+        <div class="header-left">
+            <h1>Hyrum Reynolds</h1>
+            <div id="section-links">
+                <div class="section-link"><a href="#row">About Me</a></div>|
+                <div class="section-link"><a href="#interests-container">Interests</a></div>|
+                <div class="section-link"><a href="#class-schedule-container">Class Schedule</a></div>
+            </div>
+        </div>
+        <div class="header-right">
+            <img id="selfie" src="selfie.jpg" alt="A picture of me">
+        </div>
+    </div>
+    
+
+    <div id="row" class="row-container">
+        <div class="info-card">
+            <h2>Personal Info:</h2>
+            <ul>
+                <li><b>Major:</b> Computer Science</li>
+                <li><b>High School:</b> Timpview High School, Provo, Utah. 2024</li>
+                <li><b>Current Year at UVU:</b> Sophomore</li>
+                <li><b>Favorite Ice Cream:</b> Chocolate Marshmellow</li>
+            </ul>
+        </div>
+        <div class="info-card">
+            <h2>My Five Favorite Books</h2>
+            <ol>
+                <li><i>Yumi and the Nightmare Painter</i> by <a href="https://www.brandonsanderson.com" target="_blank">Brandon Sanderson</a></li>
+                <li><i>The Picture of Dorian Gray</i> by <a href="https://www.wilde-online.info/" target="_blank">Oscar Wilde</a></li>
+                <li><i>Skyward</i> by <a href="https://www.brandonsanderson.com" target="_blank">Brandon Sanderson</a></li>
+                <li><i>The Way of Kings</i> by <a href="https://www.brandonsanderson.com" target="_blank">Brandon Sanderson</a></li>
+                <li><i>Words of Radiance</i> by <a href="https://www.brandonsanderson.com" target="_blank">Brandon Sanderson</a></li>
+            </ol>
+        </div>
+        <div class="info-card">
+            <h2>Ode to HTML, a Haiku</h2>
+
+            <p class="poem centered">HTML, well,<br>it can never disapoint.<br>Simple, clean, perfect.</p>
+
+            <p class="centered">This haiku was inspired by the fact that HTML was the first thing I could think of. I already have experience with HTML, so I decided to write the poem about how I think that HTML is a perfect simple backbone for web development.</p>
+        </div>
+    </div>
+
+    <div id="interests-container">
+
+    <h2>My Personal Interests</h2>
+
+    <p>
+        One of my biggest interests is writing. 
+        Since a pretty young age I've been an aspiring author, and I've outlined and started writing lots of projects over the years. 
+        I haven't finished quite so many, but I have finished a few.
+        As a child I was obsessed with <i>Harry Potter</i>, but getting into Brandon Sanderson's works as a teenager was what really inspired me to write my own stories.
+        I think that stories are a fascinating way to explore ideas, and I hope one day to be able to share my own ideas with the world.
+    </p>
+
+    <p>
+        Another one of my interests is drumming. 
+        Since I got into percussion in middle school it's been a big part of my life, but it wasn't until high school, and marching band, that I really started to get into it.
+        I love the process of perfecting a piece of music, and the feeling of playing with a group of people.
+        I also love the feeling of performing, and the adrenaline rush that comes with it.
+        I now drum in UVU's Green Man Group, and aspire to join a drum corps next summer.
+    </p>
+
+    <p>
+        A third interest of mine is anime.
+        Although as a child I mostly consumed stories through books, recently I've found anime to be a great way to experience stories.
+        As I've gotten busier with school and work, anime is a great way to watch a story while also being able to do other things, like drum practice or homework.
+        Additionally, it doubles as practice for my Japanese, which is another interest of mine; insights into another culture are always interesting.
+        Aside from those factors, I just really enjoy the art style and the way stories are told in anime.
+        Any medium will inevitably be hit or miss, but I feel that every anime really commits to its identity, so when it hits it really hits.
+    </p>
+
+    </div>
+
+    <div id="class-schedule-container">
+
+    <h2>Class Schedule</h2>
+
+    <table cellpadding="3" cellspacing="3">
+        <tr class="heading"><td></td><td>Monday</td><td>Tuesday</td><td>Wednesday</td><td>Thursday</td><td>Friday</td></tr>
+        <tr><td>10:00</td><td></td><td rowspan="2" class="wd1">Web Development I</td><td></td><td rowspan="2" class="wd1">Web Development I</td><td></td></tr>
+        <tr><td>10:30</td><td></td><td></td><td></td></tr>
+        <tr><td>11:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>11:30</td><td></td><td rowspan="2" class="sd1">Software Development I</td><td></td><td rowspan="2" class="sd1">Software Development I</td><td></td></tr>
+        <tr><td>12:00</td><td></td><td></td><td></td></tr>
+        <tr><td>12:30</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>1:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>1:30</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>2:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>2:30</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>3:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>3:30</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4:00</td><td></td><td rowspan="2" class="ioa">Introduction to Astronomy</td><td></td><td rowspan="2" class="ioa">Introduction to Astronomy</td><td></td></tr>
+        <tr><td>4:30</td><td></td><td></td><td></td></tr>
+        <tr><td>5:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>5:30</td><td></td><td rowspan="2" class="cn">Computer Networks</td><td></td><td rowspan="2" class="cn">Computer Networks</td><td></td></tr>
+        <tr><td>6:00</td><td></td><td></td><td></td></tr>
+        <tr><td>6:30</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>7:00</td><td></td><td rowspan="6" class="dr">Drumline Rehearsal</td><td></td><td rowspan="6" class="dr">Drumline Rehearsal</td><td></td></tr>
+        <tr><td>7:30</td><td></td><td></td><td></td></tr>
+        <tr><td>8:00</td><td></td><td></td><td></td></tr>
+        <tr><td>8:30</td><td></td><td></td><td></td></tr>
+        <tr><td>9:00</td><td></td><td></td><td></td></tr>
+        <tr><td>9:30</td><td></td><td></td><td></td></tr>
+    </table>
+
+    </div>
+</body>
+</html>
